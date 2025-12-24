@@ -1,0 +1,87 @@
+/* src/styles/addProduct.css */
+
+.add-product-container {
+  max-width: 520px;
+  margin: 80px auto;
+  padding: 32px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.add-product-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #111827;
+}
+
+.add-product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.add-product-form label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.add-product-form input,
+.add-product-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.add-product-form textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.add-product-form input:focus,
+.add-product-form textarea:focus {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15);
+}
+
+.add-product-form button {
+  margin-top: 12px;
+  padding: 12px;
+  background: #ef4444;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.add-product-form button:hover {
+  background: #dc2626;
+}
+
+.add-product-form button:active {
+  transform: scale(0.98);
+}
+
+.add-product-status {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.add-product-status.success {
+  color: #16a34a;
+}
+
+.add-product-status.error {
+  color: #dc2626;
+}

@@ -1,0 +1,47 @@
+.admin-products-container {
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 24px;
+}
+
+.admin-products-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.admin-products-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.admin-products-table th,
+.admin-products-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.admin-products-table th {
+  background: #f9fafb;
+  font-size: 14px;
+  color: #374151;
+}
+
+.admin-products-table td {
+  font-size: 14px;
+}
+
+.admin-products-table button {
+  margin-right: 8px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #e5e7eb;
+  color: #6b7280;
+}

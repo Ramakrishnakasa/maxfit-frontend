@@ -1,0 +1,32 @@
+.trust-strip {
+  max-width: 1200px;
+  margin: 40px auto 60px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  background: #fafafa;
+  border-radius: 12px;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.trust-icon {
+  font-size: 26px;
+}
+
+.trust-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #111;
+}
+
+.trust-sub {
+  font-size: 13px;
+  color: #666;
+  margin-top: 2px;
+}

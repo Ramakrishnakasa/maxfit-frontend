@@ -1,0 +1,36 @@
+.category-row {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.category-row-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.category-row-header h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.category-row-header button {
+  font-size: 14px;
+  background: none;
+  border: none;
+  color: #ef4444;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.category-row-header button:hover {
+  text-decoration: underline;
+}
+
+.category-row-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px;
+}

@@ -1,0 +1,119 @@
+/* /src/styles/register.css */
+
+:root {
+  --bg: #f6f8fb;
+  --card: #ffffff;
+  --primary: #2563eb;
+  --text: #222;
+  --muted: #666;
+  --error: #d32f2f;
+  --success: #2e7d32;
+}
+
+.register-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: var(--bg);
+}
+
+.register-box {
+  width: 360px;
+  background: var(--card);
+  padding: 26px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.register-title {
+  text-align: center;
+  margin: 0 0 18px;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* Input fields */
+
+.field-label {
+  display: block;
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.field-input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 5px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 150ms ease;
+}
+
+.field-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.12);
+}
+
+/* Buttons */
+
+.btn-primary {
+  width: 100%;
+  margin-top: 18px;
+  padding: 10px 14px;
+  border: none;
+  background: var(--primary);
+  color: #fff;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-primary:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* Messages */
+
+.msg {
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.msg-error {
+  background: #ffe2e2;
+  color: var(--error);
+  border: 1px solid #ffc9c9;
+}
+
+.msg-success {
+  background: #e6ffe9;
+  color: var(--success);
+  border: 1px solid #b4e3b7;
+}
+
+.login-note {
+  margin-top: 16px;
+  font-size: 14px;
+  text-align: center;
+  color: var(--muted);
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: var(--primary);
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0;
+  margin-left: 4px;
+}
