@@ -24,6 +24,15 @@ jobs:
       - name: Build frontend
         run: npm run build
 
+      # 🔍 DEBUG STEP (SAFE – prints only length, not value)
+      - name: Debug Docker secrets presence
+        run: |
+          echo "USERNAME length: ${#DOCKER_USERNAME}"
+          echo "PASSWORD length: ${#DOCKER_PASSWORD}"
+        env:
+          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+
       - name: Login to Docker Hub
         run: |
           echo "${{ secrets.DOCKER_PASSWORD }}" | docker login \
