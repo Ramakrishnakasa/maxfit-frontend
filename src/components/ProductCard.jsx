@@ -17,7 +17,7 @@ export default function ProductCard({ product }) {
   };
 
   const handleViewProduct = () => {
-    navigate(`/products/${product.id}`);
+    navigate(`/products/${product.id}`); 
   };
 
   return (

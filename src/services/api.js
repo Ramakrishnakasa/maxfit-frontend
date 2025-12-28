@@ -1,13 +1,33 @@
-// api.js (existing)
+// // api.js (existing)
+// import axios from "axios";
+
+// const api = axios.create({
+//   baseURL: import.meta.env.VITE_API_URL || "http://localhost:8080/api",
+//   withCredentials: false,
+//   headers: { "Content-Type": "application/json" },
+// });
+
+// // Attach token to every request if present
+// api.interceptors.request.use(config => {
+//   const token = localStorage.getItem("token");
+//   if (token) {
+//     config.headers = config.headers || {};
+//     config.headers.Authorization = `Bearer ${token}`;
+//   }
+//   return config;
+// });
+
+
+// export default api;
+// api.js
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "http://localhost:8080/api",
+  baseURL: import.meta.env.VITE_API_URL,
   withCredentials: false,
   headers: { "Content-Type": "application/json" },
 });
 
-// Attach token to every request if present
 api.interceptors.request.use(config => {
   const token = localStorage.getItem("token");
   if (token) {
@@ -16,6 +36,5 @@ api.interceptors.request.use(config => {
   }
   return config;
 });
-
 
 export default api;
